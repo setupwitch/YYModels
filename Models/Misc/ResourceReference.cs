@@ -1,4 +1,6 @@
-﻿namespace YYModels.Models;
+﻿using System;
+
+namespace YYModels.Models;
 
 public interface IResourceReference
 {
@@ -56,10 +58,84 @@ public class ResourceReference<T> : IResourceReference where T : ResourceBase
         get => _targetType ?? typeof(T); 
         set => _targetType = value; 
     }
+
+    public ResourceReference() { }
+
+    public ResourceReference(string name)
+    {
+        Name = name;
+        var attr = (GMResourceAttribute?)Attribute.GetCustomAttribute(typeof(T), typeof(GMResourceAttribute));
+        if (attr is not null)
+        {
+            // folders have weird references
+            if (typeof(T) == typeof(GMFolder))
+            {
+                Path = $"{attr.Path}/{name}.yy";
+            }
+            else
+            {
+                Path = $"{attr.Path}/{name}/{name}.yy";
+            }
+        }
+        else
+        {
+            Path = string.Empty;
+        }
+    }
+
+    public ResourceReference(string name, string path)
+    {
+        Name = name;
+        Path = path;
+    }
+
+    public ResourceReference(string name, Type type)
+    {
+        Name = name;
+        var attr = (GMResourceAttribute?)Attribute.GetCustomAttribute(type, typeof(GMResourceAttribute));
+        if (attr is not null)
+        {
+            if (type == typeof(GMFolder))
+            {
+                Path = $"{attr.Path}/{name}.yy";
+            }
+            else
+            {
+                Path = $"{attr.Path}/{name}/{name}.yy";
+            }
+        }
+        else
+        {
+            Path = string.Empty;
+        }
+    }
+
+    public ResourceReference(GMFolder folder)
+    {
+        Name = folder.Name;
+        Path = folder.FolderPath;
+    }
 }
 
 public class ResourceReferenceWithOrder : ResourceReference<ResourceBase>
 {
     [GameMakerProperty("order")]
     public int Order { get; set; }
+
+    public ResourceReferenceWithOrder() { }
+
+    public ResourceReferenceWithOrder(string name, int order = 0) : base(name)
+    {
+        Order = order;
+    }
+
+    public ResourceReferenceWithOrder(string name, Type type, int order = 0) : base(name, type)
+    {
+        Order = order;
+    }
+
+    public ResourceReferenceWithOrder(string name, string path, int order = 0) : base(name, path)
+    {
+        Order = order;
+    }
 }

@@ -3,7 +3,7 @@ namespace YYModels.Models;
 /// <summary>
 /// The base resource for assets.
 /// </summary>
-/// <remarks>Version 0</remarks>
+[YYVersion(0)]
 public class ResourceBase : IResourceBase
 {
     public string ResourceName { get; set; }

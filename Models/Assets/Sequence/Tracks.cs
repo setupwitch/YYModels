@@ -2,7 +2,7 @@ namespace YYModels.Models;
 
 public partial class GMSequence
 {
-    /// <remarks>Version 0</remarks>
+    [YYVersion(0)]
     public class GMBaseTrack : ResourceBase
     {
         /// <summary>
@@ -123,7 +123,7 @@ public partial class GMSequence
         }
     }
     
-    /// <remarks>Version 0</remarks>
+    [YYVersion(0)]
     public class GMGraphicTrack : GMBaseTrack
     {
         /// <summary>
@@ -133,7 +133,7 @@ public partial class GMSequence
         public KeyframeStore<AssetSpriteKeyframe> Keyframes { get; set; }
     }
     
-    /// <remarks>Version 0</remarks>
+    [YYVersion(0)]
     public class GMSequenceTrack : GMBaseTrack
     {
         /// <summary>
@@ -143,7 +143,7 @@ public partial class GMSequence
         public KeyframeStore<AssetSequenceKeyframe> Keyframes { get; set; }
     }
     
-    /// <remarks>Version 0</remarks>
+    [YYVersion(0)]
     public class GMSpriteFramesTrack : GMBaseTrack
     {
         /// <summary>
@@ -159,43 +159,43 @@ public partial class GMSequence
         public ResourceReference<GMSprite>? Sprite { get; set; }
     }
     
-    /// <remarks>Version 0</remarks>
+    [YYVersion(0)]
     public class GMComponentTrack : GMBaseTrack
     {
         
     }
     
-    /// <remarks>Version 0</remarks>
+    [YYVersion(0)]
     public class GMClipMaskTrack : GMComponentTrack
     {
         
     }
     
-    /// <remarks>Version 0</remarks>
+    [YYVersion(0)]
     public class GMGroupTrack : GMComponentTrack
     {
         
     }
     
-    /// <remarks>Version 0</remarks>
+    [YYVersion(0)]
     public class GMClipMask_Mask : GMGroupTrack
     {
         
     }
     
-    /// <remarks>Version 0</remarks>
+    [YYVersion(0)]
     public class GMClipMask_Subject : GMGroupTrack
     {
         
     }
 
-    /// <remarks>Version 0</remarks>
+    [YYVersion(0)]
     public class GMParameterTrack : GMBaseTrack
     {
         
     }
     
-    /// <remarks>Version 0</remarks>
+    [YYVersion(0)]
     public class GMStringTrack : GMParameterTrack
     {
         /// <summary>
@@ -205,7 +205,7 @@ public partial class GMSequence
         public KeyframeStore<StringKeyframe> Keyframes { get; set; }
     }
     
-    /// <remarks>Version 0</remarks>
+    [YYVersion(0)]
     public class GMRealTrack : GMParameterTrack
     {
         /// <summary>
@@ -215,7 +215,7 @@ public partial class GMSequence
         public KeyframeStore<RealKeyframe> Keyframes { get; set; }
     }
     
-    /// <remarks>Version 0</remarks>
+    [YYVersion(0)]
     public class GMAudioEffectTrack : GMParameterTrack
     {
         /// <summary>
@@ -226,7 +226,7 @@ public partial class GMSequence
     }
     
     /// <remarks>Unused</remarks>
-    /// <remarks>Version 0</remarks>
+    [YYVersion(0)]
     public class GMCodeTrack : GMResourceTrack
     {
         /// <summary>
@@ -236,7 +236,7 @@ public partial class GMSequence
         public KeyframeStore<CodeKeyframe> Keyframes { get; set; }
     }
     
-    /// <remarks>Version 0</remarks>
+    [YYVersion(0)]
     public class GMColourTrack : GMParameterTrack
     {
         /// <summary>
@@ -246,7 +246,7 @@ public partial class GMSequence
         public KeyframeStore<ColourKeyframe> Keyframes { get; set; }
     }
     
-    /// <remarks>Version 0</remarks>
+    [YYVersion(0)]
     public class GMBoolTrack : GMParameterTrack
     {
         /// <summary>
@@ -256,13 +256,13 @@ public partial class GMSequence
         public KeyframeStore<BoolKeyframe> Keyframes { get; set; }
     }
     
-    /// <remarks>Version 0</remarks>
+    [YYVersion(0)]
     public class GMResourceTrack : GMBaseTrack
     {
         
     }
     
-    /// <remarks>Version 0</remarks>
+    [YYVersion(0)]
     public class GMTextTrack : GMResourceTrack
     {
         /// <summary>
@@ -272,7 +272,7 @@ public partial class GMSequence
         public KeyframeStore<AssetTextKeyframe> Keyframes { get; set; }
     }
     
-    /// <remarks>Version 0</remarks>
+    [YYVersion(0)]
     public class GMInstanceTrack : GMResourceTrack
     {
         /// <summary>
@@ -282,7 +282,7 @@ public partial class GMSequence
         public KeyframeStore<AssetInstanceKeyframe> Keyframes { get; set; }
     }
     
-    /// <remarks>Version 0</remarks>
+    [YYVersion(0)]
     public class GMParticleTrack : GMResourceTrack
     {
         /// <summary>
@@ -292,7 +292,7 @@ public partial class GMSequence
         public KeyframeStore<AssetParticleSystemKeyframe> Keyframes { get; set; }
     }
     
-    /// <remarks>Version 0</remarks>
+    [YYVersion(0)]
     public class GMAudioTrack : GMResourceTrack
     {
         /// <summary>

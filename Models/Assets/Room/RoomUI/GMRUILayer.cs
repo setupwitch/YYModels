@@ -1,6 +1,6 @@
 namespace YYModels.Models;
 
-/// <remarks>Version 1</remarks>
+[YYVersion(1)]
 public class GMRUILayer : GMRUIContainer
 {
     /// <inheritdoc cref="GMRFlexPanel.ContentAlignment"/>
@@ -122,7 +122,7 @@ public class GMRUILayer : GMRUIContainer
 }
 
 /// <remarks>Unused</remarks>
-/// <remarks>Version 0</remarks>
+[YYVersion(0)]
 public class GMRUIEffectLayer : GMRUILayer
 {
     

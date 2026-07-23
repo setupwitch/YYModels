@@ -1,6 +1,6 @@
 ﻿namespace YYModels.Models;
 
-/// <remarks>Version 0</remarks>
+[YYVersion(0)]
 public class GMWasmOptions : GMOptionsBase
 {
     [GameMakerProperty("option_wasm_game_name")]

@@ -1,6 +1,6 @@
 ﻿namespace YYModels.Models;
 
-/// <remarks>Version 0</remarks>
+[YYVersion(0)]
 public class GMPS4Options : GMOptionsBase
 {
     [GameMakerProperty("option_ps4_display_cursor")]

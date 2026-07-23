@@ -1,6 +1,6 @@
 ﻿namespace YYModels.Models;
 
-/// <remarks>Version 1</remarks>
+[YYVersion(1)]
 public class GMiOSOptions : GMOptionsBase
 {
     [GameMakerProperty("option_ios_build_number")]

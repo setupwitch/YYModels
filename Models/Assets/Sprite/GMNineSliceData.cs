@@ -3,7 +3,7 @@
 /// <summary>
 /// Nine Slice data for the sprite.
 /// </summary>
-/// <remarks>Version 0</remarks>
+[YYVersion(0)]
 public class GMNineSliceData : ResourceBase
 {
     /// <summary>

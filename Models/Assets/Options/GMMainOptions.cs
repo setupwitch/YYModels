@@ -1,6 +1,6 @@
 ﻿namespace YYModels.Models;
 
-/// <remarks>Version 5</remarks>
+[YYVersion(5)]
 public class GMMainOptions : GMOptionsBase
 {
     [GameMakerProperty("option_allow_instance_change")]

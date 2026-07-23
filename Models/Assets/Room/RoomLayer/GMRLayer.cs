@@ -3,7 +3,7 @@
     /// <summary>
     /// A layer in a room.
     /// </summary>
-    /// <remarks>Version 0</remarks>
+    [YYVersion(0)]
     [GameMakerPolymorphic]
     [GameMakerDerivedType(typeof(GMRAssetLayer), nameof(GMRAssetLayer))]
     [GameMakerDerivedType(typeof(GMRBackgroundLayer), nameof(GMRBackgroundLayer))]

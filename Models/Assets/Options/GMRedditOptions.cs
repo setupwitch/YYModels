@@ -1,6 +1,6 @@
 ﻿namespace YYModels.Models;
 
-/// <remarks>Version 2</remarks>
+[YYVersion(2)]
 public class GMRedditOptions : GMOptionsBase
 {
     [GameMakerProperty("option_reddit_devvit_project_id")]

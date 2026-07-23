@@ -1,6 +1,6 @@
 namespace YYModels.Models;
 
-/// <remarks>Version 2</remarks>
+[YYVersion(2)]
 [GMResource("sounds")]
 public class GMSound : ResourceBase
 {

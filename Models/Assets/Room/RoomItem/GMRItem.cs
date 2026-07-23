@@ -3,7 +3,7 @@ namespace YYModels.Models;
 /// <summary>
 /// The base room item class.
 /// </summary>
-/// <remarks>Version 0</remarks>
+[YYVersion(0)]
 [GameMakerPolymorphic]
 [GameMakerDerivedType(typeof(GMRInstance), nameof(GMRInstance))]
 [GameMakerDerivedType(typeof(GMRGraphic), nameof(GMRGraphic))]

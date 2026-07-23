@@ -1,6 +1,6 @@
 ﻿namespace YYModels.Models;
 
-/// <remarks>Version 1</remarks>
+[YYVersion(1)]
 public class GMExtensionFile : ResourceBase
 {
     /// <summary>
@@ -69,7 +69,7 @@ public class GMExtensionFile : ResourceBase
     [GameMakerProperty("usesRunnerInterface")]
     public bool UsesRunnerInterface { get; set; }
     
-    /// <remarks>Version 0</remarks>
+    [YYVersion(0)]
     public class GMProxyFile : ResourceBase
     {
         /// <summary>
@@ -79,7 +79,7 @@ public class GMExtensionFile : ResourceBase
         public TargetPlatforms TargetMask { get; set; }
     }
     
-    /// <remarks>Version 0</remarks>
+    [YYVersion(0)]
     public class GMExtensionConstant : ResourceBase
     {
         /// <summary>
@@ -95,7 +95,7 @@ public class GMExtensionFile : ResourceBase
         public string Value { get; set; }
     }
     
-    /// <remarks>Version 0</remarks>
+    [YYVersion(0)]
     public class GMExtensionFunction : ResourceBase
     {
         /// <summary>

@@ -3,7 +3,7 @@
 /// <summary>
 /// A sequence graphic in a <see cref="GMRAssetLayer"/>.
 /// </summary>
-/// <remarks>Version 1</remarks>
+[YYVersion(1)]
 public class GMRSequenceGraphic : GMRItem
 {
     /// <summary>

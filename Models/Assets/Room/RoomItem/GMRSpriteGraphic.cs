@@ -3,7 +3,7 @@
 /// <summary>
 /// A sprite graphic in a <see cref="GMRAssetLayer"/>.
 /// </summary>
-/// <remarks>Version 1</remarks>
+[YYVersion(1)]
 public class GMRSpriteGraphic : GMRItem
 {
     /// <summary>

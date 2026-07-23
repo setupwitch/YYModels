@@ -1,4 +1,4 @@
-﻿namespace YYModels;
+namespace YYModels;
 
 public class GameMakerProperty : Attribute
 {
@@ -34,8 +34,16 @@ public class GameMakerDerivedType : Attribute
 }
 
 [AttributeUsage(AttributeTargets.Class, Inherited = false)]
-public class GMResourceAttribute : Attribute
+public class GMResource : Attribute
 {
     public string Path { get; }
-    public GMResourceAttribute(string path) => Path = path;
+    public GMResource(string path) => Path = path;
+}
+
+[AttributeUsage(AttributeTargets.Class | AttributeTargets.Struct, Inherited = false)]
+public class YYVersion : Attribute
+{
+    public string Version { get; }
+    public YYVersion(string version) => Version = version;
+    public YYVersion(int version) => Version = $"{version}.0";
 }

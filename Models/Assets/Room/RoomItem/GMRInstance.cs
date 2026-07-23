@@ -3,7 +3,7 @@
 /// <summary>
 /// An instance in a <see cref="GMRInstanceLayer"/>.
 /// </summary>
-/// <remarks>Version 4</remarks>
+[YYVersion(4)]
 public class GMRInstance : GMRItem
 {
     /// <summary>
@@ -74,7 +74,7 @@ public class GMRInstance : GMRItem
     
     
     /// <remarks>Possibly Unused</remarks>
-    /// <remarks>Version 1</remarks>
+    [YYVersion(1)]
     public class InstanceFlexProps : ResourceBase
     {
         

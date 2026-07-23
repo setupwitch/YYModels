@@ -5,7 +5,7 @@ public partial class GMSequence
     /// <summary>
     /// A KeyframeStore in a sequence.
     /// </summary>
-    /// <remarks>Version 1</remarks>
+    [YYVersion(1)]
     /// <typeparam name="T">A keyframe class</typeparam>
     /// <example><see cref="Models.GMSequence.AssetKeyframe"/>, <see cref="Models.GMSequence.AnimCurveKeyframe"/></example>
     public class KeyframeStore<T> : ResourceBase
@@ -20,7 +20,7 @@ public partial class GMSequence
     /// <summary>
     /// A Keyframe in a sequence.
     /// </summary>
-    /// <remarks>Version 0</remarks>
+    [YYVersion(0)]
     /// <typeparam name="T">A keyframe class</typeparam>
     /// <example><see cref="Models.GMSequence.AssetKeyframe"/>, <see cref="Models.GMSequence.AnimCurveKeyframe"/></example>
     public class Keyframe<T> : ResourceBase
@@ -68,7 +68,7 @@ public partial class GMSequence
         public Guid Guid { get; set; }
     }
     
-    /// <remarks>Version 0</remarks>
+    [YYVersion(0)]
     public class BoolKeyframe : ResourceBase
     {
         /// <summary>
@@ -78,7 +78,7 @@ public partial class GMSequence
         public bool Value { get; set; }
     }
     
-    /// <remarks>Version 0</remarks>
+    [YYVersion(0)]
     public class MessageEventKeyframe : ResourceBase
     {
         /// <summary>
@@ -88,13 +88,13 @@ public partial class GMSequence
         public List<string> Events { get; set; }
     }
     
-    /// <remarks>Version 0</remarks>
+    [YYVersion(0)]
     public class MomentsEventKeyframe : MessageEventKeyframe
     {
         
     }
     
-    /// <remarks>Version 0</remarks>
+    [YYVersion(0)]
     public class AssetKeyframe : ResourceBase
     {
         /// <summary>
@@ -104,37 +104,37 @@ public partial class GMSequence
         public ResourceReference<GMSprite> Asset { get; set; }
     }
     
-    /// <remarks>Version 0</remarks>
+    [YYVersion(0)]
     public class AssetInstanceKeyframe : AssetKeyframe
     {
 
     }
     
-    /// <remarks>Version 0</remarks>
+    [YYVersion(0)]
     public class AssetSequenceKeyframe : AssetKeyframe
     {
         
     }
     
-    /// <remarks>Version 0</remarks>
+    [YYVersion(0)]
     public class AssetParticleSystemKeyframe : AssetKeyframe
     {
         
     }
     
-    /// <remarks>Version 0</remarks>
+    [YYVersion(0)]
     public class AssetSpriteKeyframe : AssetKeyframe
     {
 
     }
     
-    /// <remarks>Version 0</remarks>
+    [YYVersion(0)]
     public class SpriteFrameKeyframe : AssetKeyframe
     {
 
     }
     
-    /// <remarks>Version 1</remarks>
+    [YYVersion(1)]
     public class AssetTextKeyframe : AssetKeyframe
     {
         /// <summary>
@@ -198,7 +198,7 @@ public partial class GMSequence
         }
     }
     
-    /// <remarks>Version 0</remarks>
+    [YYVersion(0)]
     public class StringKeyframe : ResourceBase
     {
         /// <summary>
@@ -208,7 +208,7 @@ public partial class GMSequence
         public string String { get; set; }
     }
     
-    /// <remarks>Version 0</remarks>
+    [YYVersion(0)]
     public class AudioKeyframe : AssetKeyframe
     {
         /// <summary>
@@ -219,13 +219,13 @@ public partial class GMSequence
     }
     
     /// <remarks>Unused</remarks>
-    /// <remarks>Version 0</remarks>
+    [YYVersion(0)]
     public class CodeKeyframe : AssetKeyframe
     {
         
     }
     
-    /// <remarks>Version 0</remarks>
+    [YYVersion(0)]
     public class AnimCurveKeyframe : ResourceBase
     {
         /// <summary>
@@ -241,7 +241,7 @@ public partial class GMSequence
         public GMAnimCurve? EmbeddedAnimationCurve { get; set; }
     }
     
-    /// <remarks>Version 0</remarks>
+    [YYVersion(0)]
     public class RealKeyframe : AnimCurveKeyframe
     {
         /// <summary>
@@ -251,7 +251,7 @@ public partial class GMSequence
         public float Value { get; set; }
     }
 
-    /// <remarks>Version 0</remarks>
+    [YYVersion(0)]
     public class AudioEffectKeyframe : AnimCurveKeyframe
     {
         /// <summary>
@@ -261,7 +261,7 @@ public partial class GMSequence
         public AudioEffectParam? Parameter { get; set; }
     }
     
-    /// <remarks>Version 0</remarks>
+    [YYVersion(0)]
     public class ColourKeyframe : AnimCurveKeyframe
     {
         /// <summary>

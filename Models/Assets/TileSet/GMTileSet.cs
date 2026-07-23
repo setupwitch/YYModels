@@ -1,6 +1,6 @@
 namespace YYModels.Models;
 
-/// <remarks>Version 1</remarks>
+[YYVersion(1)]
 [GMResource("tilesets")]
 public class GMTileSet : ResourceBase
 {
@@ -109,7 +109,7 @@ public class GMTileSet : ResourceBase
     /// <summary>
     /// Auto tilesets.
     /// </summary>
-    /// <remarks>Version 0</remarks>
+    [YYVersion(0)]
     public class GMAutoTileSet : ResourceBase
     {
         /// <summary>
@@ -128,7 +128,7 @@ public class GMTileSet : ResourceBase
     /// <summary>
     /// An animation in a tileset.
     /// </summary>
-    /// <remarks>Version 0</remarks>
+    [YYVersion(0)]
     public class GMTileAnimation : ResourceBase
     {
         /// <summary>

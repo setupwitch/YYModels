@@ -1,6 +1,6 @@
 ﻿namespace YYModels.Models;
 
-/// <remarks>Version 0</remarks>
+[YYVersion(0)]
 public class GMPS5Options : GMOptionsBase
 {
     [GameMakerProperty("option_ps5_display_cursor")]

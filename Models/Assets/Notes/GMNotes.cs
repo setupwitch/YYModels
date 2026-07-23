@@ -1,6 +1,6 @@
 ﻿namespace YYModels.Models;
 
-/// <remarks>Version 1</remarks>
+[YYVersion(1)]
 [GMResource("notes")]
 public class GMNotes : ResourceBase
 {

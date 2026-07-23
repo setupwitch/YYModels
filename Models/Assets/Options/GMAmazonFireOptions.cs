@@ -1,7 +1,7 @@
 ﻿namespace YYModels.Models;
 
 /// <remarks>Unused</remarks>
-/// <remarks>Version 0</remarks>
+[YYVersion(0)]
 public class GMAmazonFireOptions : GMOptionsBase
 {
     

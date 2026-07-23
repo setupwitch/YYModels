@@ -1,6 +1,6 @@
 ﻿namespace YYModels.Models;
 
-/// <remarks>Version 0</remarks>    
+[YYVersion(0)]    
 public class GMLinuxOptions : GMOptionsBase
 {
     [GameMakerProperty("option_linux_allow_fullscreen")]

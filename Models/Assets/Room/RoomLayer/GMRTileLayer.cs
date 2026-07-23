@@ -3,7 +3,7 @@
 /// <summary>
 /// A tile layer in a room.
 /// </summary>
-/// <remarks>Version 0</remarks>
+[YYVersion(0)]
 public class GMRTileLayer : GMRLayer
 {
     /// <summary>

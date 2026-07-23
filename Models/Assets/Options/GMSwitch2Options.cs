@@ -1,6 +1,6 @@
 ﻿namespace YYModels.Models;
 
-/// <remarks>Version 0</remarks>
+[YYVersion(0)]
 public class GMSwitch2Options : GMOptionsBase
 {
     [GameMakerProperty("option_switch2_allow_debug_output")]

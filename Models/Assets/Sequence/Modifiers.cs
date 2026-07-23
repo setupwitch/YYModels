@@ -13,24 +13,24 @@ public partial class GMSequence
     /// <summary>
     /// A track modifier for visibility.
     /// </summary>
-    /// <remarks>Version 0</remarks>
+    [YYVersion(0)]
     public class InvisibleModifier : ResourceBase, IModifier { }
 
     /// <summary>
     /// A track modifier for locking.
     /// </summary>
-    /// <remarks>Version 0</remarks>
+    [YYVersion(0)]
     public class LockedModifier : ResourceBase, IModifier { }
     
     /// <summary>
     /// A track modifier for disabling.
     /// </summary>
-    /// <remarks>Version 0</remarks>
+    [YYVersion(0)]
     public class DisableModifier : ResourceBase, IModifier { }
     
     /// <summary>
     /// A track modifier for linking. (not sure?)
     /// </summary>
-    /// <remarks>Version 0</remarks>
+    [YYVersion(0)]
     public class LinkModifier : ResourceBase, IModifier { }
 }

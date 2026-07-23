@@ -3,7 +3,7 @@
 /// <summary>
 /// An instance layer in a room.
 /// </summary>
-/// <remarks>Version 0</remarks>
+[YYVersion(0)]
 public class GMRInstanceLayer : GMRLayer
 {
     /// <summary>

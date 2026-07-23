@@ -3,7 +3,7 @@
 /// <summary>
 /// A text item in a <see cref="GMRAssetLayer"/>.
 /// </summary>
-/// <remarks>Version 3</remarks>
+[YYVersion(3)]
 public class GMRTextItem : GMRItem
 {
     /// <summary>

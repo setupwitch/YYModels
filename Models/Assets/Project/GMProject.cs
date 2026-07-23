@@ -1,6 +1,6 @@
 namespace YYModels.Models;
 
-/// <remarks>Version 1</remarks>
+[YYVersion(1)]
 public class GMProject : ResourceBase
 {
     /// <summary>
@@ -103,7 +103,8 @@ public class GMProject : ResourceBase
         public string Name { get; set; }
     }
     
-    /// <remarks>Version 0</remarks>
+    [YYVersion(0)]
+    [GMResource("datafiles")]
     public class GMIncludedFile : ResourceBase
     {
         /// <summary>

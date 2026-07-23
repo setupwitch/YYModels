@@ -3,7 +3,7 @@
 /// <summary>
 /// An interface for fill styles.
 /// </summary>
-/// <remarks>Version 0</remarks>
+[YYVersion(0)]
 [GameMakerKeyPolymorphic]
 [GameMakerDerivedType(typeof(SolidFillStyleData), "$1")]
 [GameMakerDerivedType(typeof(GradientFillStyleData), "$2")]
@@ -25,7 +25,7 @@ public class FillStyleData : ResourceBase
 /// <summary>
 /// A fill style for solid colors
 /// </summary>
-/// <remarks>Version 0</remarks>
+[YYVersion(0)]
 public class SolidFillStyleData : FillStyleData
 {
     /// <summary>
@@ -35,14 +35,14 @@ public class SolidFillStyleData : FillStyleData
     public uint RGBAColor { get; set; }
 }
 
-/// <remarks>Version 0</remarks>
+[YYVersion(0)]
 public class GradientFillStyleData : FillStyleData { }
 
-/// <remarks>Version 0</remarks>
+[YYVersion(0)]
 public class LinearGradientFillStyleData : FillStyleData { }
 
-/// <remarks>Version 0</remarks>
+[YYVersion(0)]
 public class RadialGradientFillStyleData : FillStyleData { }
 
-/// <remarks>Version 0</remarks>
+[YYVersion(0)]
 public class BitmapFillStyleData : FillStyleData { }

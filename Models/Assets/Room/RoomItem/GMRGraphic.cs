@@ -4,7 +4,7 @@
 /// <summary>
 /// A graphic in a <see cref="GMRAssetLayer"/>, used for legacy tiles?
 /// </summary>
-/// <remarks>Version 1</remarks>
+[YYVersion(1)]
 public class GMRGraphic : GMRItem
 {        
     /// <summary>

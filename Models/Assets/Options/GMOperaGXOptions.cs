@@ -1,6 +1,6 @@
 ﻿namespace YYModels.Models;
 
-/// <remarks>Version 1</remarks>
+[YYVersion(1)]
 public class GMOperaGXOptions : GMOptionsBase
 {
     [GameMakerProperty("option_operagx_display_cursor")]

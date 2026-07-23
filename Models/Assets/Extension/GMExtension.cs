@@ -2,7 +2,7 @@ namespace YYModels.Models;
 
 // TODO: More research on the history and stored information in extensions.
 
-/// <remarks>Version 0</remarks>
+[YYVersion(0)]
 [GMResource("extensions")]
 public class GMExtension : ResourceBase
 {

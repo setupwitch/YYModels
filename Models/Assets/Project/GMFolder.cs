@@ -2,7 +2,7 @@
 
 namespace YYModels.Models;
 
-/// <remarks>Version 0</remarks>
+[YYVersion(0)]
 [GMResource("folders")]
 public class GMFolder : ResourceBase
 {

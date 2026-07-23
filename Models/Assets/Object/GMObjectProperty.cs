@@ -1,6 +1,6 @@
 ﻿namespace YYModels.Models;
 
-/// <remarks>Version 2</remarks>
+[YYVersion(2)]
 public class GMObjectProperty : ResourceBase
 {
     public enum ObjectPropertyType

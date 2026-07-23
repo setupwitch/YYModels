@@ -1,6 +1,6 @@
 ﻿namespace YYModels.Models;
 
-/// <remarks>Version 0</remarks>
+[YYVersion(0)]
 public class GMMacOptions : GMOptionsBase
 {
     [GameMakerProperty("option_mac_allow_fullscreen")]

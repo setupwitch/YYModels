@@ -3,7 +3,7 @@
 /// <summary>
 /// A layer designed for path assets.
 /// </summary>
-/// <remarks>Version 0</remarks>
+[YYVersion(0)]
 public class GMRPathLayer : GMRLayer
 {
     /// <summary>

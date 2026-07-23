@@ -3,7 +3,7 @@
 /// <summary>
 /// An image layer for a sprite.
 /// </summary>
-/// <remarks>Version 0</remarks>
+[YYVersion(0)]
 [GameMakerDerivedType(typeof(GMImageLayer), nameof(GMImageLayer))]
 [GameMakerDerivedType(typeof(GMImageFolderLayer), nameof(GMImageFolderLayer))]
 public class GMImageLayer : ResourceBase
@@ -42,7 +42,7 @@ public class GMImageLayer : ResourceBase
 /// <summary>
 /// A folder that holds sprite layers.
 /// </summary>
-/// <remarks>Version 0</remarks>
+[YYVersion(0)]
 public class GMImageFolderLayer : GMImageLayer
 {
     [GameMakerProperty("layers")]

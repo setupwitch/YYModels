@@ -1,6 +1,6 @@
 ﻿namespace YYModels.Models;
 
-/// <remarks>Version 1</remarks>
+[YYVersion(1)]
 public class GMAndroidOptions : GMOptionsBase
 {
     [GameMakerProperty("option_android_application_tag_inject")]

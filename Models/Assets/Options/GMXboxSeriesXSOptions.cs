@@ -1,6 +1,6 @@
 ﻿namespace YYModels.Models;
 
-/// <remarks>Version 1</remarks>
+[YYVersion(1)]
 public class GMXboxSeriesXSOptions : GMOptionsBase
 {
     [GameMakerProperty("option_xboxseriesxs_advancedmemorymodel_one_x")]

@@ -1,6 +1,6 @@
 ﻿namespace YYModels.Models;
 
-/// <remarks>Version 0</remarks>
+[YYVersion(0)]
 public class GMHtml5Options : GMOptionsBase
 {
     [GameMakerProperty("option_html5_allow_fullscreen")]

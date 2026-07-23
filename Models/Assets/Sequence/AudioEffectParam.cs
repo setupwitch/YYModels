@@ -70,14 +70,14 @@ public class AudioEffectParam
 }
 
 /// <remarks>Unused</remarks>
-/// <remarks>Version 0</remarks>
+[YYVersion(0)]
 public class GMAudioEffect : ResourceBase
 {
     
 }
 
 /// <remarks>Unused</remarks>
-/// <remarks>Version 0</remarks>
+[YYVersion(0)]
 public class GMAudioEmitter : ResourceBase
 {
     

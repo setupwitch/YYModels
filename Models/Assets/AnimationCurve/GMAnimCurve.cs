@@ -1,6 +1,6 @@
 ﻿namespace YYModels.Models;
 
-/// <remarks>Version 0</remarks>
+[YYVersion(0)]
 [GMResource("animcurves")]
 public class GMAnimCurve : ResourceBase
 {

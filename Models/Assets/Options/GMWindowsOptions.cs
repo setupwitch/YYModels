@@ -1,6 +1,6 @@
 ﻿namespace YYModels.Models;
 
-/// <remarks>Version 2</remarks>
+[YYVersion(2)]
 public class GMWindowsOptions : GMOptionsBase
 {
     [GameMakerProperty("option_windows_allow_fullscreen_switching")]

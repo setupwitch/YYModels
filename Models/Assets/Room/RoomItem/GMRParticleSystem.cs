@@ -3,7 +3,7 @@
 /// <summary>
 /// A particle system emitter in a <see cref="GMRAssetLayer"/>.
 /// </summary>
-/// <remarks>Version 1</remarks>
+[YYVersion(1)]
 public class GMRParticleSystem : GMRItem
 {
     /// <summary>

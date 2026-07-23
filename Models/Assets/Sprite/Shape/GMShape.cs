@@ -1,5 +1,5 @@
 namespace YYModels.Models;
-/// <remarks>Version 2</remarks>
+[YYVersion(2)]
 public class GMShape : ResourceBase
 {
     /// <summary>

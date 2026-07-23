@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace YYModels.Models;
 
@@ -64,11 +64,11 @@ public class ResourceReference<T> : IResourceReference where T : ResourceBase
     public ResourceReference(string name)
     {
         Name = name;
-        var attr = (GMResourceAttribute?)Attribute.GetCustomAttribute(typeof(T), typeof(GMResourceAttribute));
+        var attr = (GMResource?)Attribute.GetCustomAttribute(typeof(T), typeof(GMResource));
         if (attr is not null)
         {
-            // folders have weird references
-            if (typeof(T) == typeof(GMFolder))
+            // folders and datafiles have weird references
+            if (typeof(T) == typeof(GMFolder) || attr.Path.StartsWith("datafiles"))
             {
                 Path = $"{attr.Path}/{name}.yy";
             }
@@ -92,10 +92,10 @@ public class ResourceReference<T> : IResourceReference where T : ResourceBase
     public ResourceReference(string name, Type type)
     {
         Name = name;
-        var attr = (GMResourceAttribute?)Attribute.GetCustomAttribute(type, typeof(GMResourceAttribute));
+        var attr = (GMResource?)Attribute.GetCustomAttribute(type, typeof(GMResource));
         if (attr is not null)
         {
-            if (type == typeof(GMFolder))
+            if (type == typeof(GMFolder) || attr.Path.StartsWith("datafiles"))
             {
                 Path = $"{attr.Path}/{name}.yy";
             }
@@ -114,6 +114,21 @@ public class ResourceReference<T> : IResourceReference where T : ResourceBase
     {
         Name = folder.Name;
         Path = folder.FolderPath;
+    }
+
+    public static implicit operator ResourceReference<ResourceBase>(ResourceReference<T> reference)
+    {
+        if (reference is null)
+        {
+            return null!;
+        }
+        return new ResourceReference<ResourceBase>
+        {
+            Name = reference.Name,
+            Path = reference.Path,
+            TargetType = reference.TargetType,
+            Resource = reference.Resource
+        };
     }
 }
 

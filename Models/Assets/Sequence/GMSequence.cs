@@ -62,7 +62,7 @@ public partial class GMSequence : ResourceBase
     /// The message events in the sequence.
     /// </summary>
     [GameMakerProperty("events")]
-    public KeyframeStore<MessageEventKeyframe> Events { get; set; }
+    public KeyframeStore<MessageEventKeyframe> Events { get; set; } = new();
 
     /// <summary>
     /// The length (in seconds) of the sequence.
@@ -80,7 +80,7 @@ public partial class GMSequence : ResourceBase
     /// The moments in the sequence.
     /// </summary>
     [GameMakerProperty("moments")]
-    public KeyframeStore<MomentsEventKeyframe> Moments { get; set; }
+    public KeyframeStore<MomentsEventKeyframe> Moments { get; set; } = new();
 
     /// <summary>
     /// The <see cref="Playback"/> type of the sequence.

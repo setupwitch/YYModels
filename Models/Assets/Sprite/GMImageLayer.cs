@@ -46,5 +46,5 @@ public class GMImageLayer : ResourceBase
 public class GMImageFolderLayer : GMImageLayer
 {
     [GameMakerProperty("layers")]
-    public List<GMImageLayer> Layers { get; set; }
+    public List<GMImageLayer> Layers { get; set; } = new();
 }

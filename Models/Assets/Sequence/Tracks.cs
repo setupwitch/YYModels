@@ -15,7 +15,7 @@ public partial class GMSequence
         /// The events in the track.
         /// </summary>
         [GameMakerProperty("events")]
-        public List<GMEvent> Events { get; set; }
+        public List<GMEvent> Events { get; set; } = new();
 
         /// <summary>
         /// Whether to inherit the color from the parent track.
@@ -39,7 +39,7 @@ public partial class GMSequence
         /// The modifiers in the track.
         /// </summary>
         [GameMakerProperty("modifiers")]
-        public List<IModifier> Modifiers { get; set; }
+        public List<IModifier> Modifiers { get; set; } = new();
 
         /// <summary>
         /// The current color of the track.
@@ -51,7 +51,7 @@ public partial class GMSequence
         /// The child tracks.
         /// </summary>
         [GameMakerProperty("tracks")]
-        public List<GMBaseTrack> Tracks { get; set; }
+        public List<GMBaseTrack> Tracks { get; set; } = new();
 
         /// <summary>
         /// The traits of the track.
@@ -130,7 +130,7 @@ public partial class GMSequence
         /// The <see cref="KeyframeStore{AssetSpriteKeyFrame}"/> in the track.
         /// </summary>
         [GameMakerProperty("keyframes")]
-        public KeyframeStore<AssetSpriteKeyframe> Keyframes { get; set; }
+        public KeyframeStore<AssetSpriteKeyframe> Keyframes { get; set; } = new();
     }
     
     [YYVersion(0)]
@@ -140,7 +140,7 @@ public partial class GMSequence
         /// The <see cref="KeyframeStore{AssetSequenceKeyframe}"/> in the track.
         /// </summary>
         [GameMakerProperty("keyframes")]
-        public KeyframeStore<AssetSequenceKeyframe> Keyframes { get; set; }
+        public KeyframeStore<AssetSequenceKeyframe> Keyframes { get; set; } = new();
     }
     
     [YYVersion(0)]
@@ -150,7 +150,7 @@ public partial class GMSequence
         /// The <see cref="KeyframeStore{SpriteFrameKeyframe}"/> in the track.
         /// </summary>
         [GameMakerProperty("keyframes")]
-        public KeyframeStore<SpriteFrameKeyframe> Keyframes { get; set; }
+        public KeyframeStore<SpriteFrameKeyframe> Keyframes { get; set; } = new();
 
         /// <summary>
         /// The sprite reference in the track.
@@ -202,7 +202,7 @@ public partial class GMSequence
         /// The <see cref="KeyframeStore{StringKeyframe}"/> in the track.
         /// </summary>
         [GameMakerProperty("keyframes")]
-        public KeyframeStore<StringKeyframe> Keyframes { get; set; }
+        public KeyframeStore<StringKeyframe> Keyframes { get; set; } = new();
     }
     
     [YYVersion(0)]
@@ -212,7 +212,7 @@ public partial class GMSequence
         /// The <see cref="KeyframeStore{RealKeyframe}"/> in the track.
         /// </summary>
         [GameMakerProperty("keyframes")]
-        public KeyframeStore<RealKeyframe> Keyframes { get; set; }
+        public KeyframeStore<RealKeyframe> Keyframes { get; set; } = new();
     }
     
     [YYVersion(0)]
@@ -222,7 +222,7 @@ public partial class GMSequence
         /// The <see cref="KeyframeStore{AudioEffectKeyframe}"/> in the track.
         /// </summary>
         [GameMakerProperty("keyframes")]
-        public KeyframeStore<AudioEffectKeyframe> Keyframes { get; set; }
+        public KeyframeStore<AudioEffectKeyframe> Keyframes { get; set; } = new();
     }
     
     /// <remarks>Unused</remarks>
@@ -233,7 +233,7 @@ public partial class GMSequence
         /// The <see cref="KeyframeStore{CodeKeyframe}"/> in the track.
         /// </summary>
         [GameMakerProperty("keyframes")]
-        public KeyframeStore<CodeKeyframe> Keyframes { get; set; }
+        public KeyframeStore<CodeKeyframe> Keyframes { get; set; } = new();
     }
     
     [YYVersion(0)]
@@ -243,7 +243,7 @@ public partial class GMSequence
         /// The <see cref="KeyframeStore{ColourKeyframe}"/> in the track.
         /// </summary>
         [GameMakerProperty("keyframes")]
-        public KeyframeStore<ColourKeyframe> Keyframes { get; set; }
+        public KeyframeStore<ColourKeyframe> Keyframes { get; set; } = new();
     }
     
     [YYVersion(0)]
@@ -253,7 +253,7 @@ public partial class GMSequence
         /// The <see cref="KeyframeStore{BoolKeyframe}"/> in the track.
         /// </summary>
         [GameMakerProperty("keyframes")]
-        public KeyframeStore<BoolKeyframe> Keyframes { get; set; }
+        public KeyframeStore<BoolKeyframe> Keyframes { get; set; } = new();
     }
     
     [YYVersion(0)]
@@ -269,7 +269,7 @@ public partial class GMSequence
         /// The <see cref="KeyframeStore{AssetTextKeyframe}"/> in the track.
         /// </summary>
         [GameMakerProperty("keyframes")]
-        public KeyframeStore<AssetTextKeyframe> Keyframes { get; set; }
+        public KeyframeStore<AssetTextKeyframe> Keyframes { get; set; } = new();
     }
     
     [YYVersion(0)]
@@ -279,7 +279,7 @@ public partial class GMSequence
         /// The <see cref="KeyframeStore{AssetInstanceKeyframe}"/> in the track.
         /// </summary>
         [GameMakerProperty("keyframes")]
-        public KeyframeStore<AssetInstanceKeyframe> Keyframes { get; set; }
+        public KeyframeStore<AssetInstanceKeyframe> Keyframes { get; set; } = new();
     }
     
     [YYVersion(0)]
@@ -289,7 +289,7 @@ public partial class GMSequence
         /// The <see cref="KeyframeStore{AssetParticleSystemKeyframe}"/> in the track.
         /// </summary>
         [GameMakerProperty("keyframes")]
-        public KeyframeStore<AssetParticleSystemKeyframe> Keyframes { get; set; }
+        public KeyframeStore<AssetParticleSystemKeyframe> Keyframes { get; set; } = new();
     }
     
     [YYVersion(0)]
@@ -299,6 +299,6 @@ public partial class GMSequence
         /// The <see cref="KeyframeStore{AudioKeyframe}"/> in the track.
         /// </summary>
         [GameMakerProperty("keyframes")]
-        public KeyframeStore<AudioKeyframe> Keyframes { get; set; }
+        public KeyframeStore<AudioKeyframe> Keyframes { get; set; } = new();
     }
 }

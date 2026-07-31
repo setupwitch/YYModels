@@ -74,7 +74,7 @@ public class GMFont : ResourceBase
     /// The <see cref="Glyph"/>s of the font.
     /// </summary>
     [GameMakerProperty("glyphs")]
-    public Dictionary<int, FontGlyph> Glyphs { get; set; }
+    public Dictionary<int, FontGlyph> Glyphs { get; set; } = new();
 
     /// <summary>
     /// Hinting for the font, see <see cref="FontHinting"/>.
@@ -104,7 +104,7 @@ public class GMFont : ResourceBase
     /// font character spacing info
     /// </summary>
     [GameMakerProperty("kerningPairs")]
-    public List<KerningPair> KerningPairs { get; set; }
+    public List<KerningPair> KerningPairs { get; set; } = new();
 
     /// <summary>
     /// The end of the character range.
@@ -134,7 +134,7 @@ public class GMFont : ResourceBase
     /// Ranges of the font
     /// </summary>
     [GameMakerProperty("ranges")]
-    public List<FontRange> Ranges { get; set; }
+    public List<FontRange> Ranges { get; set; } = new();
 
     /// <summary>
     /// Unknown always false, probably will regenerate the font on load?

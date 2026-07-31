@@ -8,7 +8,7 @@ public class GMObject : ResourceBase
     /// The list of events in the object.
     /// </summary>
     [GameMakerProperty("eventList")]
-    public List<GMEvent> Events { get; set; }
+    public List<GMEvent> Events { get; set; } = new();
 
     /// <summary>
     /// Unknown.
@@ -20,7 +20,7 @@ public class GMObject : ResourceBase
     /// The <see cref="Properties"/> of the parent object that have been overridden.
     /// </summary>
     [GameMakerProperty("overriddenProperties")]
-    public List<GMOverriddenProperty> OverriddenProperties { get; set; }
+    public List<GMOverriddenProperty> OverriddenProperties { get; set; } = new();
 
     /// <summary>
     /// The parent of the object.
@@ -110,7 +110,7 @@ public class GMObject : ResourceBase
     /// The Variable Definitions of the object.
     /// </summary>
     [GameMakerProperty("properties")]
-    public List<GMObjectProperty> Properties { get; set; }
+    public List<GMObjectProperty> Properties { get; set; } = new();
 
     /// <summary>
     /// Whether the instance is solid.

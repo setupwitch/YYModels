@@ -50,7 +50,7 @@ public class GMParticleSystem : ResourceBase
     /// The Particle System Emitters in the Particle System.
     /// </summary>
     [GameMakerProperty("emitters")]
-    public List<GMPSEmitter> Emitters { get; set; }
+    public List<GMPSEmitter> Emitters { get; set; } = new();
 
     /// <summary>
     /// Whether to show the backdrop.

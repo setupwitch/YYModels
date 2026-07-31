@@ -10,5 +10,5 @@ public class GMRInstanceLayer : GMRLayer
     /// The instances inside of the layer.
     /// </summary>
     [GameMakerProperty("instances")]
-    public List<GMRInstance> Instances { get; set; }
+    public List<GMRInstance> Instances { get; set; } = new();
 }

@@ -8,5 +8,5 @@ public class GMTimeline : ResourceBase
     /// A list of moments for the timeline.
     /// </summary>
     [GameMakerProperty("momentList")]
-    public List<GMMoment> Moments { get; set; }
+    public List<GMMoment> Moments { get; set; } = new();
 }

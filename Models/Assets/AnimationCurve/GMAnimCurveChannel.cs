@@ -13,7 +13,7 @@ public class GMAnimCurveChannel : ResourceBase
     /// the points in the animation curve.
     /// </summary>
     [GameMakerProperty("points")]
-    public List<CurvePoint> Points { get; set; }
+    public List<CurvePoint> Points { get; set; } = new();
 
     /// <summary>
     /// whether the curve is visible in the editor.

@@ -56,7 +56,7 @@ public partial class GMSequence : ResourceBase
     /// Event number to function.
     /// </summary>
     [GameMakerProperty("eventToFunction")]
-    public Dictionary<int, string> EventToFunction { get; set; }
+    public Dictionary<int, string> EventToFunction { get; set; } = new();
 
     /// <summary>
     /// The message events in the sequence.
@@ -140,7 +140,7 @@ public partial class GMSequence : ResourceBase
     /// The tracks in the sequence.
     /// </summary>
     [GameMakerProperty("tracks")]
-    public List<GMBaseTrack> Tracks { get; set; }
+    public List<GMBaseTrack> Tracks { get; set; } = new();
 
     /// <summary>
     /// The visible range of the sequence? unknown.

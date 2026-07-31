@@ -48,7 +48,7 @@ public class GMShape : ResourceBase
     /// The style groups in the shape.
     /// </summary>
     [GameMakerProperty("styleGroups")]
-    public List<GMStyleGroup> StyleGroups { get; set; }
+    public List<GMStyleGroup> StyleGroups { get; set; } = new();
 
     [GameMakerProperty("triangulated")]
     public bool IsTriangulated { get; set; }

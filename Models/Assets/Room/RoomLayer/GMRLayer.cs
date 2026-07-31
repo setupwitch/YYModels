@@ -77,13 +77,13 @@
         /// The child layers of the room.
         /// </summary>
         [GameMakerProperty("layers")]
-        public List<GMRLayer> Layers { get; set; }
+        public List<GMRLayer> Layers { get; set; } = new();
 
         /// <summary>
         /// The effect properties of the layer.
         /// </summary>
         [GameMakerProperty("properties")]
-        public List<EffectProperty> Properties { get; set; }
+        public List<EffectProperty> Properties { get; set; } = new();
 
         /// <summary>
         /// Whether the <see cref="Depth"/> is defined by the user.

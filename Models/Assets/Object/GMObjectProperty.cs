@@ -18,13 +18,13 @@ public class GMObjectProperty : ResourceBase
     /// Filters for what asset to use in the property.
     /// </summary>
     [GameMakerProperty("filters")]
-    public List<string> Filters { get; set; }
+    public List<string> Filters { get; set; } = new();
 
     /// <summary>
     /// The items to pick from in the list.
     /// </summary>
     [GameMakerProperty("listItems")]
-    public List<string> ListValues { get; set; }
+    public List<string> ListValues { get; set; } = new();
 
     /// <summary>
     /// Whether the list supports selection of multiple values at once.

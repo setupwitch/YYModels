@@ -7,13 +7,13 @@ public class GMExtensionFile : ResourceBase
     /// Files to add in place depending on the targets.
     /// </summary>
     [GameMakerProperty("ProxyFiles")]
-    public List<GMProxyFile> ProxyFiles { get; set; }
+    public List<GMProxyFile> ProxyFiles { get; set; } = new();
 
     /// <summary>
     /// The constants in the file.
     /// </summary>
     [GameMakerProperty("constants")]
-    public List<GMExtensionConstant> ExtensionConstants { get; set; }
+    public List<GMExtensionConstant> ExtensionConstants { get; set; } = new();
 
     /// <summary>
     /// The targets to copy the file to.
@@ -37,7 +37,7 @@ public class GMExtensionFile : ResourceBase
     /// The functions in the file.
     /// </summary>
     [GameMakerProperty("functions")]
-    public List<GMExtensionFunction> ExtensionFunctions { get; set; }
+    public List<GMExtensionFunction> ExtensionFunctions { get; set; } = new();
 
     /// <summary>
     /// The <see cref="GMExtensionFunction"/> to execute on game start.
@@ -108,7 +108,7 @@ public class GMExtensionFile : ResourceBase
         /// The types of the arguments in the function.
         /// </summary>
         [GameMakerProperty("args")]
-        public List<ValueType> Arguments { get; set; }
+        public List<ValueType> Arguments { get; set; } = new();
 
         /// <summary>
         /// The documentation of the function

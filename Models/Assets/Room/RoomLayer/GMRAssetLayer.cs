@@ -10,5 +10,5 @@ public class GMRAssetLayer : GMRLayer
     /// The assets inside of the layer.
     /// </summary>
     [GameMakerProperty("assets")]
-    public List<GMRItem> Assets { get; set; }
+    public List<GMRItem> Assets { get; set; } = new();
 }

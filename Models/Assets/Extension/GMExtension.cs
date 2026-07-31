@@ -16,13 +16,13 @@ public class GMExtension : ResourceBase
     /// The resources included in the extension
     /// </summary>
     [GameMakerProperty("IncludedResources")]
-    public List<string> IncludedResources { get; set; }
+    public List<string> IncludedResources { get; set; } = new();
 
     /// <summary>
     /// The permissions that the extension requires on android.
     /// </summary>
     [GameMakerProperty("androidPermissions")]
-    public List<string> AndroidPermissions { get; set; }
+    public List<string> AndroidPermissions { get; set; } = new();
 
     /// <summary>
     /// Unknown.
@@ -106,7 +106,7 @@ public class GMExtension : ResourceBase
     /// The files in the extension.
     /// </summary>
     [GameMakerProperty("files")]
-    public List<GMExtensionFile> ExtensionFiles { get; set; }
+    public List<GMExtensionFile> ExtensionFiles { get; set; } = new();
 
     /// <summary>
     /// Unknown.
@@ -160,13 +160,13 @@ public class GMExtension : ResourceBase
     /// Unknown.
     /// </summary>
     [GameMakerProperty("iosSystemFrameworkEntries")]
-    public List<GMExtensionFrameworkEntry> IOSSystemFrameworkEntries { get; set; }
+    public List<GMExtensionFrameworkEntry> IOSSystemFrameworkEntries { get; set; } = new();
 
     /// <summary>
     /// Unknown.
     /// </summary>
     [GameMakerProperty("iosThirdPartyFrameworkEntries")]
-    public List<GMExtensionFrameworkEntry> IOSThirdPartyFrameworkEntries { get; set; }
+    public List<GMExtensionFrameworkEntry> IOSThirdPartyFrameworkEntries { get; set; } = new();
 
     /// <summary>
     /// Unknown.
@@ -214,7 +214,7 @@ public class GMExtension : ResourceBase
     /// The Options that the extension has.
     /// </summary>
     [GameMakerProperty("options")]
-    public List<GMExtensionOption> ExtensionOptions { get; set; }
+    public List<GMExtensionOption> ExtensionOptions { get; set; } = new();
 
     /// <summary>
     /// The name of the options INI file.
@@ -268,13 +268,13 @@ public class GMExtension : ResourceBase
     /// Unknown.
     /// </summary>
     [GameMakerProperty("tvosSystemFrameworkEntries")]
-    public List<GMExtensionFrameworkEntry> TVOSSystemFrameworkEntries { get; set; }
+    public List<GMExtensionFrameworkEntry> TVOSSystemFrameworkEntries { get; set; } = new();
 
     /// <summary>
     /// Unknown.
     /// </summary>
     [GameMakerProperty("tvosThirdPartyFrameworkEntries")]
-    public List<GMExtensionFrameworkEntry> TVOSThirdPartyFrameworkEntries { get; set; }
+    public List<GMExtensionFrameworkEntry> TVOSThirdPartyFrameworkEntries { get; set; } = new();
 
     /// <summary>
     /// Unknown.

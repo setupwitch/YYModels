@@ -7,17 +7,17 @@ public class GMStyleGroup : ResourceBase
     /// Style information about the fill sections.
     /// </summary>
     [GameMakerProperty("fillStyles")]
-    public List<FillStyleData> FillStyles { get; set; }
+    public List<FillStyleData> FillStyles { get; set; } = new();
 
     /// <summary>
     /// Style information about the shape outlines, Unused?
     /// </summary>
     [GameMakerProperty("lineStyleData")]
-    public List<object> LineStyleData { get; set; }
+    public List<object> LineStyleData { get; set; } = new();
 
     /// <summary>
     /// The shapes in the style group.
     /// </summary>
     [GameMakerProperty("shapes")]
-    public List<GMSubShape> Shapes { get; set; }
+    public List<GMSubShape> Shapes { get; set; } = new();
 }

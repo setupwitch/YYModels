@@ -5,31 +5,32 @@ public partial class GMSequence
     /// <summary>
     /// A KeyframeStore in a sequence.
     /// </summary>
-    [YYVersion(1)]
     /// <typeparam name="T">A keyframe class</typeparam>
     /// <example><see cref="Models.GMSequence.AssetKeyframe"/>, <see cref="Models.GMSequence.AnimCurveKeyframe"/></example>
+    [YYVersion(1)]
     public class KeyframeStore<T> : ResourceBase
     {
         /// <summary>
         /// The list of keyframes in the KeyframeStore.
         /// </summary>
         [GameMakerProperty("Keyframes")]
-        public List<Keyframe<T>> Keyframes { get; set; }
+        public List<Keyframe<T>> Keyframes { get; set; } = new();
     }
 
     /// <summary>
     /// A Keyframe in a sequence.
     /// </summary>
-    [YYVersion(0)]
     /// <typeparam name="T">A keyframe class</typeparam>
     /// <example><see cref="Models.GMSequence.AssetKeyframe"/>, <see cref="Models.GMSequence.AnimCurveKeyframe"/></example>
+    [YYVersion(0)]
+    
     public class Keyframe<T> : ResourceBase
     {
         /// <summary>
         /// The channels in the keyframe.
         /// </summary>
         [GameMakerProperty("Channels")]
-        public Dictionary<string, T> Channels { get; set; }
+        public Dictionary<string, T> Channels { get; set; } = new();
 
         /// <summary>
         /// Whether the keyframe is disabled or not.
@@ -85,7 +86,7 @@ public partial class GMSequence
         /// The messages in the keyframe.
         /// </summary>
         [GameMakerProperty("Events")]
-        public List<string> Events { get; set; }
+        public List<string> Events { get; set; } = new();
     }
     
     [YYVersion(0)]

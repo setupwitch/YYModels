@@ -40,5 +40,5 @@ public class ResourceBase : IResourceBase
     /// </summary>
     [GameMakerProperty("tags")]
     [GameMakerIgnoreWhenWritingNull]
-    public List<string>? Tags { get; set; }
+    public List<string>? Tags { get; set; } = new();
 }

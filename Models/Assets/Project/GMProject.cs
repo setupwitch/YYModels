@@ -7,49 +7,49 @@ public class GMProject : ResourceBase
     /// The audio groups in the project.
     /// </summary>
     [GameMakerProperty("AudioGroups")]
-    public List<GMAudioGroup> AudioGroups { get; set; }
+    public List<GMAudioGroup> AudioGroups { get; set; } = new();
 
     /// <summary>
     /// The folders in the project.
     /// </summary>
     [GameMakerProperty("Folders")]
-    public List<GMFolder> Folders { get; set; }
+    public List<GMFolder> Folders { get; set; } = new();
 
     /// <summary>
     /// The prefab references
     /// </summary>
     [GameMakerProperty("ForcedPrefabProjectReferences")]
-    public List<PrefabReference> ForcedPrefabProjectReferences { get; set; }
+    public List<PrefabReference> ForcedPrefabProjectReferences { get; set; } = new();
 
     /// <summary>
     /// A list of <see cref="GMIncludedFile"/> instances.
     /// </summary>
     [GameMakerProperty("IncludedFiles")]
-    public List<GMIncludedFile> IncludedFiles { get; set; }
+    public List<GMIncludedFile> IncludedFiles { get; set; } = new();
 
     /// <summary>
     /// The shared particle emitters saved in the project.
     /// </summary>
     [GameMakerProperty("LibraryEmitters")]
-    public List<ResourceReference<GMPSEmitter>> Emitters { get; set; }
+    public List<ResourceReference<GMPSEmitter>> Emitters { get; set; } = new();
 
     /// <summary>
     ///  Contains information about the project, only ever "IDEVersion"
     /// </summary>
     [GameMakerProperty("MetaData")]
-    public Dictionary<string, string> MetaData { get; set; }
+    public Dictionary<string, string> MetaData { get; set; } = new();
 
     /// <summary>
     /// A list of <see cref="RoomOrderNode"/> instances to ensure the room order.
     /// </summary>
     [GameMakerProperty("RoomOrderNodes")]
-    public List<RoomOrderNode> RoomOrderNodes { get; set; }
+    public List<RoomOrderNode> RoomOrderNodes { get; set; } = new();
 
     /// <summary>
     /// The texture groups in the project.
     /// </summary>
     [GameMakerProperty("TextureGroups")]
-    public List<GMTextureGroup> TextureGroups { get; set; }
+    public List<GMTextureGroup> TextureGroups { get; set; } = new();
 
     /// <summary>
     /// Build configs for the project.
@@ -73,7 +73,7 @@ public class GMProject : ResourceBase
     /// A list of <see cref="Resource"/> instances for every asset in the project.
     /// </summary>
     [GameMakerProperty("resources")]
-    public List<Resource> Assets { get; set; }
+    public List<Resource> Assets { get; set; } = new();
 
     /// <summary>
     /// Unimportant metadata, dependant on which template you choose.
@@ -94,7 +94,7 @@ public class GMProject : ResourceBase
         /// The child build configs.
         /// </summary>
         [GameMakerProperty("children")]
-        public List<BuildConfig> ChildConfigs { get; set; }
+        public List<BuildConfig> ChildConfigs { get; set; } = new();
 
         /// <summary>
         /// The name of the build config.

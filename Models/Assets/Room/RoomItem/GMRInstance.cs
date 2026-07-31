@@ -52,7 +52,7 @@ public class GMRInstance : GMRItem
     /// A list of <see cref="GMOverriddenProperty"/> objects for the instance.
     /// </summary>
     [GameMakerProperty("properties")]
-    public List<GMOverriddenProperty> Properties { get; set; }
+    public List<GMOverriddenProperty> Properties { get; set; } = new();
 
     /// <summary>
     /// The rotation of the instance.

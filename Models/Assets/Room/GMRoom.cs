@@ -32,7 +32,7 @@ public partial class GMRoom : ResourceBase
     /// The creation order of the instances.
     /// </summary>
     [GameMakerProperty("instanceCreationOrder")]
-    public List<ResourceReference<GMRItem>> InstanceCreationOrder { get; set; }
+    public List<ResourceReference<GMRItem>> InstanceCreationOrder { get; set; } = new();
 
     /// <summary>
     /// Whether the asset is in "drag and drop" mode.
@@ -44,7 +44,7 @@ public partial class GMRoom : ResourceBase
     /// The layers in the room
     /// </summary>
     [GameMakerProperty("layers")]
-    public List<GMRLayer> Layers { get; set; }
+    public List<GMRLayer> Layers { get; set; } = new();
 
     /// <summary>
     /// The parent room.
@@ -80,7 +80,7 @@ public partial class GMRoom : ResourceBase
     /// The views that the room has
     /// </summary>
     [GameMakerProperty("views")]
-    public List<RoomView> Views { get; set; }
+    public List<RoomView> Views { get; set; } = new();
 
     /// <summary>
     /// The volume of the room ...

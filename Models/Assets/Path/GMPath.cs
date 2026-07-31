@@ -20,7 +20,7 @@ public class GMPath : ResourceBase
     /// An array of points for the path to follow.
     /// </summary>
     [GameMakerProperty("points")]
-    public List<PathPoint> Points { get; set; }
+    public List<PathPoint> Points { get; set; } = new();
 
     /// <summary>
     /// The precision of the path, only used when <see cref="PathType"/> is Smooth Curve.

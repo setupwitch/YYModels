@@ -8,7 +8,7 @@ public class GMTileSet : ResourceBase
     /// The AutoTilesets of the tileset.
     /// </summary>
     [GameMakerProperty("autoTileSets")]
-    public List<GMAutoTileSet> AutoTileSets { get; set; }
+    public List<GMAutoTileSet> AutoTileSets { get; set; } = new();
 
     /// <summary>
     /// Custom tile brushes.
@@ -56,7 +56,7 @@ public class GMTileSet : ResourceBase
     /// The tile animation frames of the tileset.
     /// </summary>
     [GameMakerProperty("tileAnimationFrames")]
-    public List<GMTileAnimation> TileAnimationFrames { get; set; }
+    public List<GMTileAnimation> TileAnimationFrames { get; set; } = new();
 
     /// <summary>
     /// The animation speed of the tileset.
@@ -122,7 +122,7 @@ public class GMTileSet : ResourceBase
         /// The tiles in the auto tileset.
         /// </summary>
         [GameMakerProperty("tiles")]
-        public List<uint> Tiles { get; set; }
+        public List<uint> Tiles { get; set; } = new();
     }
     
     /// <summary>
@@ -135,6 +135,6 @@ public class GMTileSet : ResourceBase
         /// The frames in a tile animation.
         /// </summary>
         [GameMakerProperty("frames")]
-        public List<uint> Frames { get; set; }
+        public List<uint> Frames { get; set; } = new();
     }
 }

@@ -22,7 +22,7 @@ public class GMNineSliceData : ResourceBase
     /// The guide color for the Nine Slice editor.
     /// </summary>
     [GameMakerProperty("guideColour")]
-    public List<uint> EditorColor { get; set; }
+    public List<uint> EditorColor { get; set; } = new();
 
     /// <summary>
     /// Unknown, related to <see cref="EditorColor"/>?
@@ -52,7 +52,7 @@ public class GMNineSliceData : ResourceBase
     /// The tile modes of the sprite.
     /// </summary>
     [GameMakerProperty("tileMode")]
-    public List<TileMode> TileModes { get; set; }
+    public List<TileMode> TileModes { get; set; } = new();
 
     /// <summary>
     /// How much to trim from the top.

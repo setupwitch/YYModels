@@ -21,7 +21,7 @@ public class TileMap
     /// The compressed tile data.
     /// </summary>
     [GameMakerProperty("TileCompressedData")]
-    public List<int> TileCompressedData { get; set; }
+    public List<int> TileCompressedData { get; set; } = new();
 
     /// <summary>
     /// The format of the tile data, Unknown values.

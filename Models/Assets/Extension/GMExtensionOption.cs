@@ -49,7 +49,7 @@ public class GMExtensionOption : ResourceBase
     /// The Items that can be chosen from in the option.
     /// </summary>
     [GameMakerProperty("listItems")]
-    public List<string> ListItems { get; set; }
+    public List<string> ListItems { get; set; } = new();
 
     /// <summary>
     /// The value type of the option.

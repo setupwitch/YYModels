@@ -80,7 +80,7 @@ public class GMSprite : ResourceBase
     /// The frames that the sprite has.
     /// </summary>
     [GameMakerProperty("frames")]
-    public List<GMSpriteFrame> Frames { get; set; }
+    public List<GMSpriteFrame> Frames { get; set; } = new();
 
     /// <summary>
     /// Unknown.
@@ -104,7 +104,7 @@ public class GMSprite : ResourceBase
     /// The layers of the sprite.
     /// </summary>
     [GameMakerProperty("layers")]
-    public List<GMImageLayer> Layers { get; set; }
+    public List<GMImageLayer> Layers { get; set; } = new();
 
     /// <summary>
     /// The Nine Slice data of the sprite.

@@ -8,7 +8,7 @@ public class GMAnimCurve : ResourceBase
     /// The channels in the animation curve.
     /// </summary>
     [GameMakerProperty("channels")]
-    public List<GMAnimCurveChannel> Channels { get; set; }
+    public List<GMAnimCurveChannel> Channels { get; set; } = new();
 
     /// <summary>
     /// The type of the curve, see <see cref="CurveType"/>.

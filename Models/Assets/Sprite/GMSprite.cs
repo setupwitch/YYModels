@@ -146,7 +146,7 @@ public class GMSprite : ResourceBase
     /// The texture group of the sprite.
     /// </summary>
     [GameMakerProperty("textureGroupId")]
-    public ResourceBase TextureGroup { get; set; }
+    public ResourceReference<GMTextureGroup> TextureGroup { get; set; }
 
     /// <summary>
     /// The type of the sprite, see <see cref="SpriteType"/>.

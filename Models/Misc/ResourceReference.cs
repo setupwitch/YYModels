@@ -68,7 +68,7 @@ public class ResourceReference<T> : IResourceReference where T : ResourceBase
         if (attr is not null)
         {
             // folders and datafiles have weird references
-            if (typeof(T) == typeof(GMFolder) || attr.Path.StartsWith("datafiles"))
+            if (typeof(T) == typeof(GMFolder) || typeof(T) == typeof(GMTextureGroup))
             {
                 Path = $"{attr.Path}/{name}.yy";
             }

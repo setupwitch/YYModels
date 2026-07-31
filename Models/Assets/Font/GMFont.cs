@@ -170,7 +170,7 @@ public class GMFont : ResourceBase
     /// A reference to the <see cref="GMProject.GMTextureGroup"/>
     /// </summary>
     [GameMakerProperty("textureGroupId")]
-    public ResourceBase TextureGroup { get; set; }
+    public ResourceReference<GMTextureGroup> TextureGroup { get; set; }
 
     /// <summary>
     /// Whether the font is an SDF font or not.

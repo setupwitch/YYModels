@@ -107,31 +107,36 @@ public partial class GMSequence
     [YYVersion(0)]
     public class AssetInstanceKeyframe : AssetKeyframe
     {
-
+        [GameMakerProperty("Id")]
+        public ResourceReference<GMObject> Asset { get; set; }
     }
     
     [YYVersion(0)]
     public class AssetSequenceKeyframe : AssetKeyframe
     {
-        
+        [GameMakerProperty("Id")]
+        public ResourceReference<GMSequence> Asset { get; set; }
     }
     
     [YYVersion(0)]
     public class AssetParticleSystemKeyframe : AssetKeyframe
     {
-        
+        [GameMakerProperty("Id")]
+        public ResourceReference<GMParticleSystem> Asset { get; set; }
     }
     
     [YYVersion(0)]
     public class AssetSpriteKeyframe : AssetKeyframe
     {
-
+        [GameMakerProperty("Id")]
+        public ResourceReference<GMSprite> Asset { get; set; }
     }
     
     [YYVersion(0)]
     public class SpriteFrameKeyframe : AssetKeyframe
     {
-
+        [GameMakerProperty("Id")]
+        public ResourceReference<GMSprite> Asset { get; set; }
     }
     
     [YYVersion(1)]
@@ -191,6 +196,9 @@ public partial class GMSequence
         [GameMakerProperty("WrapMode")]
         public TextWrapMode WrapMode { get; set; }
         
+        [GameMakerProperty("Id")]
+        public ResourceReference<GMFont> Asset { get; set; }
+        
         public enum TextWrapMode
         {
             Default = 0,
@@ -216,13 +224,17 @@ public partial class GMSequence
         /// </summary>
         [GameMakerProperty("Mode")]
         public SoundMode Mode { get; set; }
+        
+        [GameMakerProperty("Id")]
+        public ResourceReference<GMSound> Asset { get; set; }
     }
     
     /// <remarks>Unused</remarks>
     [YYVersion(0)]
     public class CodeKeyframe : AssetKeyframe
     {
-        
+        [GameMakerProperty("Id")]
+        public ResourceReference<GMScript> Asset { get; set; }
     }
     
     [YYVersion(0)]

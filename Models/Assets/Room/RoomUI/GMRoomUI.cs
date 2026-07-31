@@ -14,7 +14,7 @@ public class GMRoomUI : GMRUIContainer
     /// The child nodes that are drawn on the view.
     /// </summary>
     [GameMakerProperty("viewspaceChildren")]
-    public List<GMRUILayer> ViewspaceChildren { get; set; }
+    public List<ResourceBase> ViewspaceChildren { get; set; }
 
     /// <summary>
     /// Whether the UI is visible.

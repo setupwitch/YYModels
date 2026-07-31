@@ -7,7 +7,7 @@ public class GMRUIContainer : ResourceBase, IGMRUI
     /// The children of the container.
     /// </summary>
     [GameMakerProperty("children")]
-    public List<IGMRUI> Children { get; set; }
+    public List<ResourceBase> Children { get; set; }
 
     /// <summary>
     /// The color of the node.

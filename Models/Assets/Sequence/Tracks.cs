@@ -5,11 +5,6 @@ public partial class GMSequence
     [YYVersion(0)]
     public class GMBaseTrack : ResourceBase
     {
-        /// <summary>
-        /// overwriting <see cref="ResourceBase.Name"/> so we can avoid "%Name".
-        /// </summary>
-        [GameMakerProperty("name")]
-        public virtual new string Name { get; set; } 
         
         /// <summary>
         /// The number ID of the track.
@@ -152,10 +147,8 @@ public partial class GMSequence
     [YYVersion(0)]
     public class GMSpriteFramesTrack : GMBaseTrack
     {
-        public override string Name
-        {
-            get => "frames";
-        }
+        [GameMakerProperty("name")]
+        public new string Name { get; set; }
 
         /// <summary>
         /// The <see cref="KeyframeStore{SpriteFrameKeyframe}"/> in the track.

@@ -45,5 +45,9 @@ public class YYVersion : Attribute
 {
     public string Version { get; }
     public YYVersion(string version) => Version = version;
-    public YYVersion(int version) => Version = $"{version}.0";
+
+    public YYVersion(int version)
+    {
+        Version = (version > 0) ? $"v{version}" : string.Empty;
+    } 
 }

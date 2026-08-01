@@ -27,18 +27,18 @@ public class ResourceBase : IResourceBase
     /// The legacy type of the asset.
     /// </summary>
     [GameMakerProperty("resourceType")]
-    public string? LegacyResourceType { get; set; }
+    public string? LegacyResourceType => GetType().Name; // the name of the class
 
     /// <summary>
     /// The legacy version of the asset.
     /// </summary>
     [GameMakerProperty("resourceVersion")]
-    public string? LegacyVersion { get; set; }
+    public string? LegacyVersion { get; set; } = "2.0"; // always 2.0 in 2024+
 
     /// <summary>
     /// The tags that the asset has.
     /// </summary>
     [GameMakerProperty("tags")]
     [GameMakerIgnoreWhenWritingNull]
-    public List<string>? Tags { get; set; } = new();
+    public List<string>? Tags { get; set; }
 }

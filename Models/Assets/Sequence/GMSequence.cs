@@ -104,13 +104,15 @@ public partial class GMSequence : ResourceBase
     /// The height of the sequence.
     /// </summary>
     [GameMakerProperty("seqHeight")]
-    public float Height { get; set; }
+    [GameMakerIgnoreWhenWritingNull]
+    public float? Height { get; set; }
 
     /// <summary>
     /// The width of the sequence.
     /// </summary>
     [GameMakerProperty("seqWidth")]
-    public float Width { get; set; }
+    [GameMakerIgnoreWhenWritingNull]
+    public float? Width { get; set; }
 
     /// <summary>
     /// Whether to show the backdrop of the sequence.
@@ -128,6 +130,7 @@ public partial class GMSequence : ResourceBase
     /// A reference to a sprite, used for embedded sequences in sprites.
     /// </summary>
     [GameMakerProperty("spriteId")]
+    [GameMakerIgnoreWhenWritingNull]
     public ResourceReference<GMSprite>? Sprite { get; set; }
 
     /// <summary>

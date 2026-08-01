@@ -7,9 +7,21 @@ public partial class GMSequence
     /// </summary>
     /// <typeparam name="T">A keyframe class</typeparam>
     /// <example><see cref="Models.GMSequence.AssetKeyframe"/>, <see cref="Models.GMSequence.AnimCurveKeyframe"/></example>
-    [YYVersion(1)]
+    [YYVersion(0)]
     public class KeyframeStore<T> : ResourceBase
     {
+        [GameMakerIgnore]
+        public new string Name { get; set; }
+        
+        [GameMakerIgnore]
+        public new string ResourceName { get; set; }
+        
+        /// <summary>
+        /// Overwrites <see cref="ResourceBase.LegacyResourceType"/> to fix generics.
+        /// </summary>
+        [GameMakerProperty("resourceType")]
+        public new string LegacyResourceType => this.GetType().Name.Replace("`1", $"<{typeof(T).Name}>");
+        
         /// <summary>
         /// The list of keyframes in the KeyframeStore.
         /// </summary>
@@ -26,6 +38,12 @@ public partial class GMSequence
     
     public class Keyframe<T> : ResourceBase
     {
+        /// <summary>
+        /// Overwrites <see cref="ResourceBase.LegacyResourceType"/> to fix generics.
+        /// </summary>
+        [GameMakerProperty("resourceType")]
+        public new string LegacyResourceType => this.GetType().Name.Replace("`1", $"<{typeof(T).Name}>");
+        
         /// <summary>
         /// The channels in the keyframe.
         /// </summary>

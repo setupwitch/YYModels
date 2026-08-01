@@ -4,95 +4,96 @@
 public class GMMacOptions : GMOptionsBase
 {
     [GameMakerProperty("option_mac_allow_fullscreen")]
-    public bool option_mac_allow_fullscreen { get; set; }
+    public bool AllowFullscreen { get; set; }
 
     [GameMakerProperty("option_mac_allow_incoming_network")]
-    public bool option_mac_allow_incoming_network { get; set; }
+    public bool AllowIncomingNetwork { get; set; }
 
     [GameMakerProperty("option_mac_allow_outgoing_network")]
-    public bool option_mac_allow_outgoing_network { get; set; }
+    public bool AllowOutgoingNetwork { get; set; }
 
     [GameMakerProperty("option_mac_app_category")]
-    public string option_mac_app_category { get; set; }
+    public string AppStoreCategory { get; set; }
 
     [GameMakerProperty("option_mac_app_id")]
-    public string option_mac_app_id { get; set; }
+    public string MacOSBundleId { get; set; }
 
     [GameMakerProperty("option_mac_apple_sign_in")]
-    public bool option_mac_apple_sign_in { get; set; }
+    public bool MacAppleSignIn { get; set; }
 
     [GameMakerProperty("option_mac_arm64")]
-    public bool option_mac_arm64 { get; set; }
+    public bool IncludeARM64 { get; set; }
 
     [GameMakerProperty("option_mac_build_app_store")]
-    public bool option_mac_build_app_store { get; set; }
+    public bool BuildToAppStore { get; set; }
 
     [GameMakerProperty("option_mac_build_number")]
-    public int option_mac_build_number { get; set; }
+    public int BuildVersionNumber { get; set; }
 
     [GameMakerProperty("option_mac_copyright")]
-    public string option_mac_copyright { get; set; }
+    public string CopyrightInfo { get; set; }
 
     [GameMakerProperty("option_mac_disable_sandbox")]
-    public bool option_mac_disable_sandbox { get; set; }
+    public bool DisableSandbox { get; set; }
 
     [GameMakerProperty("option_mac_display_cursor")]
-    public bool option_mac_display_cursor { get; set; }
+    public bool DisplayCursor { get; set; }
 
     [GameMakerProperty("option_mac_display_name")]
-    public string option_mac_display_name { get; set; }
+    public string DisplayName { get; set; }
 
     [GameMakerProperty("option_mac_enable_retina")]
-    public bool option_mac_enable_retina { get; set; }
+    public bool EnableRetina { get; set; }
 
     [GameMakerProperty("option_mac_enable_steam")]
-    public bool option_mac_enable_steam { get; set; }
+    public bool EnableSteam { get; set; }
 
     [GameMakerProperty("option_mac_icon_png")]
-    public string option_mac_icon_png { get; set; }
+    public string IconPath { get; set; }
 
     [GameMakerProperty("option_mac_installer_background_png")]
-    public string option_mac_installer_background_png { get; set; }
+    public string InstallerBackgroundPath { get; set; }
 
     [GameMakerProperty("option_mac_interpolate_pixels")]
-    public bool option_mac_interpolate_pixels { get; set; }
+    public bool InterpolateColors { get; set; }
 
     [GameMakerProperty("option_mac_menu_dock")]
-    public bool option_mac_menu_dock { get; set; }
+    public bool DisplayIconInDock { get; set; }
 
     [GameMakerProperty("option_mac_min_version")]
-    public string option_mac_min_version { get; set; }
+    public string MinimumOSVersion { get; set; }
 
     [GameMakerProperty("option_mac_output_dir")]
-    public string option_mac_output_dir { get; set; }
+    public string AppOutputDirectory { get; set; }
 
     [GameMakerProperty("option_mac_resize_window")]
-    public bool option_mac_resize_window { get; set; }
+    public bool AllowWindowResize { get; set; }
 
+    /// <remarks>0 == Keep aspect ratio | 1 == Full scale"</remarks>
     [GameMakerProperty("option_mac_scale")]
-    public int option_mac_scale { get; set; }
+    public int WindowScale { get; set; }
 
     [GameMakerProperty("option_mac_signing_identity")]
-    public string option_mac_signing_identity { get; set; }
+    public string SigningCertificate { get; set; }
 
     [GameMakerProperty("option_mac_splash_png")]
-    public string option_mac_splash_png { get; set; }
+    public string SplashScreenPath { get; set; }
 
     [GameMakerProperty("option_mac_start_fullscreen")]
-    public bool option_mac_start_fullscreen { get; set; }
+    public bool StartInFullscreen { get; set; }
 
     [GameMakerProperty("option_mac_team_id")]
-    public string option_mac_team_id { get; set; }
+    public string MacTeamId { get; set; }
 
     [GameMakerProperty("option_mac_texture_page")]
-    public string option_mac_texture_page { get; set; }
+    public string TexturePageDimensions { get; set; }
 
     [GameMakerProperty("option_mac_version")]
-    public string option_mac_version { get; set; }
+    public string Version { get; set; }
 
     [GameMakerProperty("option_mac_vsync")]
-    public bool option_mac_vsync { get; set; }
+    public bool EnableVsync { get; set; }
 
     [GameMakerProperty("option_mac_x86_64")]
-    public bool option_mac_x86_64 { get; set; }
+    public bool IncludeX86_64 { get; set; }
 }

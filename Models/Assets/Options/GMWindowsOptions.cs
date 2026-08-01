@@ -4,95 +4,103 @@
 public class GMWindowsOptions : GMOptionsBase
 {
     [GameMakerProperty("option_windows_allow_fullscreen_switching")]
-    public bool option_windows_allow_fullscreen_switching { get; set; }
+    public bool AllowFullscreenSwitching { get; set; }
 
     [GameMakerProperty("option_windows_borderless")]
-    public bool option_windows_borderless { get; set; }
+    public bool EnableBorderlessWindowed { get; set; }
 
     [GameMakerProperty("option_windows_company_info")]
-    public string option_windows_company_info { get; set; }
+    public string CompanyInfo { get; set; }
 
     [GameMakerProperty("option_windows_copy_exe_to_dest")]
-    public bool option_windows_copy_exe_to_dest { get; set; }
+    public bool CopyExecutable { get; set; }
 
     [GameMakerProperty("option_windows_copyright_info")]
-    public string option_windows_copyright_info { get; set; }
-
+    public string CopyrightInfo { get; set; }
+    
+    /// <remarks>Written to options.ini</remarks>
     [GameMakerProperty("option_windows_d3dswapeffectdiscard")]
-    public bool option_windows_d3dswapeffectdiscard { get; set; }
-
+    public bool D3DSwapChainDiscard { get; set; }
+    
+    /// <remarks>Written to the runner executable</remarks>
     [GameMakerProperty("option_windows_description_info")]
-    public string option_windows_description_info { get; set; }
+    public string Description { get; set; }
 
     [GameMakerProperty("option_windows_disable_sandbox")]
-    public bool option_windows_disable_sandbox { get; set; }
+    public bool DisableSandbox { get; set; }
 
     [GameMakerProperty("option_windows_display_cursor")]
-    public bool option_windows_display_cursor { get; set; }
+    public bool DisplayCursor { get; set; }
 
     [GameMakerProperty("option_windows_display_name")]
-    public string option_windows_display_name { get; set; }
+    public string DisplayName { get; set; }
 
     [GameMakerProperty("option_windows_enable_steam")]
-    public bool option_windows_enable_steam { get; set; }
+    public bool EnableSteam { get; set; }
 
     [GameMakerProperty("option_windows_executable_name")]
     public string option_windows_executable_name { get; set; }
 
     [GameMakerProperty("option_windows_icon")]
-    public string option_windows_icon { get; set; }
+    public string IconPath { get; set; }
 
+    /// <remarks>Written to the installer export</remarks>
     [GameMakerProperty("option_windows_installer_finished")]
-    public string option_windows_installer_finished { get; set; }
+    public string InstallerFinishedMessage { get; set; }
 
+    /// <remarks>Written to the installer export</remarks>
     [GameMakerProperty("option_windows_installer_header")]
-    public string option_windows_installer_header { get; set; }
+    public string InstallerHeaderMessage { get; set; }
 
     [GameMakerProperty("option_windows_interpolate_pixels")]
-    public bool option_windows_interpolate_pixels { get; set; }
+    public bool InterpolatePixels { get; set; }
 
     [GameMakerProperty("option_windows_license")]
-    public string option_windows_license { get; set; }
+    public string License { get; set; }
 
     [GameMakerProperty("option_windows_nsis_file")]
-    public string option_windows_nsis_file { get; set; }
+    public string NsisScriptFilePath { get; set; }
 
+    /// <remarks>Written to the runner executable</remarks>
     [GameMakerProperty("option_windows_product_info")]
-    public string option_windows_product_info { get; set; }
+    public string ProductInfo { get; set; }
 
+    
     [GameMakerProperty("option_windows_resize_window")]
-    public bool option_windows_resize_window { get; set; }
+    public bool AllowWindowResize { get; set; }
 
+    /// <remarks>0 == "%LOCALAPPDATA%" | 1 == "%APPDATA%"</remarks>
     [GameMakerProperty("option_windows_save_location")]
-    public int option_windows_save_location { get; set; }
+    public int SaveLocation { get; set; }
 
+    /// <remarks>0 == Keep aspect ratio | 1 == Full scale"</remarks>
     [GameMakerProperty("option_windows_scale")]
-    public int option_windows_scale { get; set; }
+    public int WindowScale { get; set; }
 
     [GameMakerProperty("option_windows_sleep_margin")]
-    public int option_windows_sleep_margin { get; set; }
+    public int SleepMargin { get; set; }
 
     [GameMakerProperty("option_windows_splash_screen")]
-    public string option_windows_splash_screen { get; set; }
+    public string SplashScreenPath { get; set; }
 
     [GameMakerProperty("option_windows_start_fullscreen")]
-    public bool option_windows_start_fullscreen { get; set; }
+    public bool StartInFullscreen { get; set; }
 
     [GameMakerProperty("option_windows_steam_use_alternative_launcher")]
-    public bool option_windows_steam_use_alternative_launcher { get; set; }
+    public bool UseAlternativeSteamLauncher { get; set; }
 
     [GameMakerProperty("option_windows_texture_page")]
-    public string option_windows_texture_page { get; set; }
+    public string TexturePageDimensions { get; set; }
 
     [GameMakerProperty("option_windows_use_raw_mouse")]
-    public bool option_windows_use_raw_mouse  { get; set; }
+    public bool UseRawMouseInput  { get; set; }
 
     [GameMakerProperty("option_windows_use_splash")]
-    public bool option_windows_use_splash { get; set; }
+    public bool UseSplashScreen { get; set; }
 
     [GameMakerProperty("option_windows_version")]
-    public string option_windows_version { get; set; }
+    public string Version { get; set; }
 
     [GameMakerProperty("option_windows_vsync")]
-    public bool option_windows_vsync { get; set; }
+    public bool EnableVsync { get; set; }
 }

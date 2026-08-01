@@ -17,6 +17,7 @@ public class GMRItem : ResourceBase
     /// The flex properties for the item in UI layers.
     /// </summary>
     [GameMakerProperty("flexProperties")]
+    [GameMakerIgnoreWhenWritingNull]
     public FlexProperties? FlexProperties { get; set; }
 
     /// <summary>

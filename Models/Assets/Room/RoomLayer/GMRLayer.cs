@@ -29,7 +29,7 @@
         /// The type of effect that the layer uses.
         /// </summary>
         [GameMakerProperty("effectType")]
-        public string EffectType { get; set; }
+        public string? EffectType { get; set; }
 
         /// <summary>
         /// The grid width of the layer.

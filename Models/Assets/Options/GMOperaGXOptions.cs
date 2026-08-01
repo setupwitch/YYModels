@@ -13,7 +13,7 @@ public class GMOperaGXOptions : GMOptionsBase
     public string option_operagx_game_name { get; set; }
 
     [GameMakerProperty("option_operagx_guid")]
-    public string option_operagx_guid { get; set; }
+    public string option_operagx_guid { get; set; } = System.Guid.NewGuid().ToString();
 
     [GameMakerProperty("option_operagx_internalShareUrl")]
     public string option_operagx_internalShareUrl { get; set; }
@@ -28,7 +28,7 @@ public class GMOperaGXOptions : GMOptionsBase
     public string option_operagx_mod_game_name { get; set; }
 
     [GameMakerProperty("option_operagx_mod_guid")]
-    public string option_operagx_mod_guid { get; set; }
+    public string option_operagx_mod_guid { get; set; } = System.Guid.NewGuid().ToString();
 
     [GameMakerProperty("option_operagx_mod_internalShareUrl")]
     public string option_operagx_mod_internalShareUrl { get; set; }

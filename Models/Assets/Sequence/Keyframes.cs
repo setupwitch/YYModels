@@ -84,7 +84,7 @@ public partial class GMSequence
         /// A Guid for the keyframe.
         /// </summary>
         [GameMakerProperty("id")]
-        public string Guid { get; set; }
+        public string Guid { get; set; } = System.Guid.NewGuid().ToString();
     }
     
     [YYVersion(0)]

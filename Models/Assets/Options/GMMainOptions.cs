@@ -25,7 +25,7 @@ public class GMMainOptions : GMOptionsBase
     public int option_game_speed { get; set; }
 
     [GameMakerProperty("option_gameguid")]
-    public string option_gameguid { get; set; }
+    public string option_gameguid { get; set; } = System.Guid.NewGuid().ToString();
 
     [GameMakerProperty("option_gameid")]
     public string option_gameid { get; set; }

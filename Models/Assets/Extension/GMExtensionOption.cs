@@ -37,7 +37,7 @@ public class GMExtensionOption : ResourceBase
     /// The GUID of the option.
     /// </summary>
     [GameMakerProperty("guid")]
-    public Guid Guid { get; set; }
+    public string Guid { get; set; } = System.Guid.NewGuid().ToString();
 
     /// <summary>
     /// Whether the option is hidden.

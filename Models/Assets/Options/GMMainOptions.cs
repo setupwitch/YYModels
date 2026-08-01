@@ -49,7 +49,7 @@ public class GMMainOptions : GMOptionsBase
     public bool RemoveUnusedAssets { get; set; }
 
     [GameMakerProperty("option_sci_usesci")]
-    public bool UseSci { get; set; }
+    public bool UseSourceControl { get; set; }
 
     [GameMakerProperty("option_spine_licence")]
     public bool SpineLicense { get; set; }

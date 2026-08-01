@@ -6,14 +6,17 @@ namespace YYModels.Models;
 [YYVersion(0)]
 public class ResourceBase : IResourceBase
 {
-    public string ResourceName { get; set; }
+    [GameMakerIgnoreWhenWritingNull]
+    public string? ResourceName { get; set; }
 
+    // I believe version always has to exist
     public string ResourceVersion { get; set; }
     
     /// <summary>
     /// The name of the asset.
     /// </summary>
     [GameMakerProperty("name")]
+    [GameMakerIgnoreWhenWritingNull]
     public string? Name { get; set; }
 
     /// <summary>

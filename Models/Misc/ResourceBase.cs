@@ -44,4 +44,11 @@ public class ResourceBase : IResourceBase
     [GameMakerProperty("tags")]
     [GameMakerIgnoreWhenWritingNull]
     public List<string>? Tags { get; set; }
+    
+    /// <summary>
+    /// Overrides specific elements for custom build configs.
+    /// </summary>
+    [GameMakerProperty("ConfigValues")]
+    [GameMakerIgnoreWhenWritingNull]
+    public Dictionary<string, Dictionary<string, string>> ConfigValues { get; set; }
 }

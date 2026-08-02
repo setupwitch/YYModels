@@ -72,6 +72,10 @@ public class ResourceReference<T> : IResourceReference where T : ResourceBase
             {
                 Path = $"{attr.Path}/{name}.yy";
             }
+            else if (typeof(T) == typeof(GMAudioGroup))
+            {
+                Path = $"{attr.Path}/{name}";
+            }
             else
             {
                 Path = $"{attr.Path}/{name}/{name}.yy";

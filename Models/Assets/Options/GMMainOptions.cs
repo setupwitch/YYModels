@@ -1,4 +1,4 @@
-﻿namespace YYModels.Models;
+namespace YYModels.Models;
 
 [YYVersion(5)]
 public class GMMainOptions : GMOptionsBase

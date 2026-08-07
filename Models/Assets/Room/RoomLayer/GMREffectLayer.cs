@@ -1,4 +1,4 @@
-﻿namespace YYModels.Models;
+namespace YYModels.Models;
 
 /// <summary>
 /// An effect layer in a room.

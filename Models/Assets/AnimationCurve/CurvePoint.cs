@@ -1,4 +1,4 @@
-﻿namespace YYModels.Models;
+namespace YYModels.Models;
 
 
 public class CurvePoint

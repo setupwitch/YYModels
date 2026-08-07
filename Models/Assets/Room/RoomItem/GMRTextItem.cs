@@ -1,4 +1,4 @@
-﻿namespace YYModels.Models;
+namespace YYModels.Models;
 
 /// <summary>
 /// A text item in a <see cref="GMRAssetLayer"/>.

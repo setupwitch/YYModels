@@ -1,4 +1,4 @@
-﻿namespace YYModels.Models;
+namespace YYModels.Models;
 
 /// <remarks>Unused</remarks>
 [YYVersion(0)]

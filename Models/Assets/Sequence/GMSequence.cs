@@ -1,4 +1,4 @@
-﻿namespace YYModels.Models;
+namespace YYModels.Models;
 
 [YYVersion(1)]
 [GMResource("sequences")]

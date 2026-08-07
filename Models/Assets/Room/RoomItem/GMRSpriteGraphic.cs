@@ -1,4 +1,4 @@
-﻿namespace YYModels.Models;
+namespace YYModels.Models;
 
 /// <summary>
 /// A sprite graphic in a <see cref="GMRAssetLayer"/>.

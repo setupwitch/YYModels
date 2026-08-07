@@ -1,4 +1,4 @@
-﻿namespace YYModels.Models;
+namespace YYModels.Models;
 
 /// <summary>
 /// The bounding box mode of the sprite.

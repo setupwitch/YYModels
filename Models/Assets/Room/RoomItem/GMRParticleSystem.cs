@@ -1,4 +1,4 @@
-﻿namespace YYModels.Models;
+namespace YYModels.Models;
 
 /// <summary>
 /// A particle system emitter in a <see cref="GMRAssetLayer"/>.

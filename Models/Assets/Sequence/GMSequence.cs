@@ -130,7 +130,6 @@ public partial class GMSequence : ResourceBase
     /// A reference to a sprite, used for embedded sequences in sprites.
     /// </summary>
     [GameMakerProperty("spriteId")]
-    [GameMakerIgnoreWhenWritingNull]
     public ResourceReference<GMSprite>? Sprite { get; set; }
 
     /// <summary>

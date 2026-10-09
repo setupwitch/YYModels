@@ -116,11 +116,7 @@ public partial class GMSequence
     [YYVersion(0)]
     public class AssetKeyframe : ResourceBase
     {
-        /// <summary>
-        /// A refernece to the asset in the keyframe.
-        /// </summary>
-        [GameMakerProperty("Id")]
-        public ResourceReference<GMSprite> Asset { get; set; }
+        
     }
     
     [YYVersion(0)]

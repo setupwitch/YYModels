@@ -229,7 +229,7 @@ public partial class GMSequence
     public class StringKeyframe : ResourceBase
     {
         /// <summary>
-        /// The string value in they keyframe.
+        /// The string value in the keyframe.
         /// </summary>
         [GameMakerProperty("String")]
         public string String { get; set; }

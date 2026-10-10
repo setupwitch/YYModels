@@ -119,10 +119,10 @@ public class GMSprite : ResourceBase
     public Origin OriginType { get; set; }
 
     /// <summary>
-    /// Whether the sprite has transparency? TODO: research more
+    /// TODO: research more
     /// </summary>
     [GameMakerProperty("preMultiplyAlpha")]
-    public bool IsTransparent { get; set; }
+    public bool PreMultiplyAlpha { get; set; }
 
     /// <summary>
     /// The embedded sequence in the sprite.
